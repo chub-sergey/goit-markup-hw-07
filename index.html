@@ -38,7 +38,7 @@
             <li class="header-item list"><a href="#" class="header-link link">Contacts</a></li>
           </ul>
         </nav>
-        <button class="mobile-menu-open data-menu-open" type="button">
+        <button class="mobile-menu-open-btn" type="button" data-menu-open>
           <svg class="mobile-menu-open-icon" width="32" height="22">
             <use href="./images/icons.svg#icon-humburger"></use>
           </svg>
@@ -55,66 +55,73 @@
           </ul>
         </address>
       </div>
-      <div class="mobile-menu data-menu">
+
+      <div class="mobile-menu is hidden" data-menu>
         <div class="container mobile-menu-container">
-          <button class="mobile-menu-close-btn data-menu-close" type="button">
+          <button class="mobile-menu-close-btn" type="button" data-menu-close>
             <svg class="mobile-menu-icon" width="24" height="24">
               <use href="./images/icons.svg#icon-close-black"></use>
             </svg>
           </button>
-          <ul class="mobile-menu-list list">
-            <li class="mobile-menu-item">
-              <a href="./index.html" class="mobile-menu-item-link link">Studio</a>
-            </li>
-            <li class="mobile-menu-item">
-              <a href="./portfolio.html" class="mobile-menu-item-link link">Portfolio</a>
-            </li>
-            <li class="mobile-menu-item">
-              <a href="#" class="mobile-menu-item-link link">Contacts</a>
-            </li>
-          </ul>
-          <ul class="mobile-menu-address-list list">
-            <li class="mobile-menu-phone">
-              <a href="tel:+110001111111" class="mobile-menu-phone link">+11 (000) 111-11-11</a>
-            </li>
-            <li class="mobile-menu-mail">
-              <a href="mailto:info@devstudio.com" class="mobile-menu-mail link"
-                >info@devstudio.com</a
-              >
-            </li>
-          </ul>
-          <ul class="mobile-menu-social-list list">
-            <li class="mobile-menu-social-item">
-              <a href="" class="mobile-menu-social-link link"
-                ><svg class="mobile-menu-social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-instagram-1"></use></svg
-              ></a>
-            </li>
-            <li class="mobile-menu-social-item">
-              <a href="" class="mobile-menu-social-link link"
-                ><svg class="mobile-menu-social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-twitter-1"></use></svg
-              ></a>
-            </li>
-            <li class="mobile-menu-social-item">
-              <a href="" class="mobile-menu-social-link link"
-                ><svg class="mobile-menu-social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-facebook-1"></use></svg
-              ></a>
-            </li>
-            <li class="mobile-menu-social-item">
-              <a href="" class="mobile-menu-social-link link"
-                ><svg class="mobile-menu-social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-linkedin-1"></use></svg
-              ></a>
-            </li>
-          </ul>
+          <div>
+            <nav class="mobile-menu-nav">
+              <ul class="mobile-menu-list list">
+                <li class="mobile-menu-item">
+                  <a href="./index.html" class="mobile-menu-item-link link">Studio</a>
+                </li>
+                <li class="mobile-menu-item">
+                  <a href="./portfolio.html" class="mobile-menu-item-link link">Portfolio</a>
+                </li>
+                <li class="mobile-menu-item">
+                  <a href="#" class="mobile-menu-item-link link">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <ul class="mobile-menu-address-list list">
+              <li class="mobile-menu-phone">
+                <a href="tel:+110001111111" class="mobile-menu-phone link">+11 (000) 111-11-11</a>
+              </li>
+              <li class="mobile-menu-mail">
+                <a href="mailto:info@devstudio.com" class="mobile-menu-mail link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mobile-menu-social-list list">
+              <li class="mobile-menu-social-item">
+                <a href="" class="mobile-menu-social-link link"
+                  ><svg class="mobile-menu-social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram-1"></use></svg
+                ></a>
+              </li>
+              <li class="mobile-menu-social-item">
+                <a href="" class="mobile-menu-social-link link"
+                  ><svg class="mobile-menu-social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter-1"></use></svg
+                ></a>
+              </li>
+              <li class="mobile-menu-social-item">
+                <a href="" class="mobile-menu-social-link link"
+                  ><svg class="mobile-menu-social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook-1"></use></svg
+                ></a>
+              </li>
+              <li class="mobile-menu-social-item">
+                <a href="" class="mobile-menu-social-link link"
+                  ><svg class="mobile-menu-social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
     <main>
       <section class="hero">
-        <div class="container">
+        <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-btn" data-modal-open type="button">Order Service</button>
         </div>
@@ -181,13 +188,31 @@
           <h2 class="about-title">What are we doing</h2>
           <ul class="about-list">
             <li class="about-item list">
-              <img src="./images/computer.jpg" width="360" height="300" alt="computer" />
+              <img
+                srcset="./images/computer.jpg 1x, ./images/computer-2x.jpg 2x"
+                src="./images/computer.jpg"
+                width="360"
+                height="300"
+                alt="computer"
+              />
             </li>
             <li class="about-item list">
-              <img src="./images/phone.jpg" width="360" height="300" alt="phone" />
+              <img
+                srcset="./images/phone.jpg 1x, ./images/phone-2x.jpg 2x"
+                src="./images/phone.jpg"
+                width="360"
+                height="300"
+                alt="phone"
+              />
             </li>
             <li class="about-item list">
-              <img src="./images/laptop.jpg" width="360" height="300" alt="laptop" />
+              <img
+                srcset="./images/laptop.jpg 1x, ./images/laptop-2x.jpg 2x"
+                src="./images/laptop.jpg"
+                width="360"
+                height="300"
+                alt="laptop"
+              />
             </li>
           </ul>
         </div>
@@ -197,7 +222,13 @@
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-item list">
-              <img src="./images/img.jpg" width="264" height="260" alt="photo man" />
+              <img
+                srcset="./images/img.jpg 1x, ./images/img-2x.jpg 2x"
+                src="./images/img.jpg"
+                width="264"
+                height="260"
+                alt="photo man"
+              />
               <div class="team-content">
                 <h3 class="team-surname">Mark Guerrero</h3>
                 <p class="team-text">Product Designer</p>
@@ -234,7 +265,13 @@
               </div>
             </li>
             <li class="team-item list">
-              <img class="" src="./images/img-1.jpg" width="264" height="260" alt="photo man" />
+              <img
+                srcset="./images/img-1.jpg 1x, ./images/img-1-2x.jpg 2x"
+                src="./images/img-1.jpg"
+                width="264"
+                height="260"
+                alt="photo man"
+              />
               <div class="team-content">
                 <h3 class="team-surname">Tom Ford</h3>
                 <p class="team-text">Frontend Developer</p>
@@ -272,7 +309,13 @@
             </li>
 
             <li class="team-item list">
-              <img class="" src="./images/img-2.jpg" width="264" height="260" alt="photo woman" />
+              <img
+                srcset="./images/img-2.jpg 1x, ./images/img-2-2x.jpg 2x"
+                src="./images/img-2.jpg"
+                width="264"
+                height="260"
+                alt="photo woman"
+              />
               <div class="team-content">
                 <h3 class="team-surname">Camilla Garcia</h3>
                 <p class="team-text">Marketing</p>
@@ -310,7 +353,13 @@
             </li>
 
             <li class="team-item list">
-              <img src="./images/img-3.jpg" width="264" height="260" alt="photo man" />
+              <img
+                srcset="./images/img-3.jpg 1x, ./images/img-3-2x.jpg 2x"
+                src="./images/img-3.jpg"
+                width="264"
+                height="260"
+                alt="photo man"
+              />
 
               <div class="team-content">
                 <h3 class="team-surname">Daniel Wilson</h3>
@@ -465,7 +514,7 @@
       </div>
     </footer>
     <!-- Modal Window -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close" data-modal-close type="button">
           <svg class="modal-icon" width="8" height="8">
@@ -473,8 +522,8 @@
           </svg>
         </button>
         <p class="modal-text">Leave your contacts and we will call you back</p>
-        Modal Form  -->
-    <!-- <form class="modal-form">
+        <!-- Modal form -->
+        <form class="modal-form">
           <label class="modal-form-field"
             ><span class="modal-form-input-description">Name</span>
             <span class="modal-form-input-wrapper">
@@ -524,9 +573,8 @@
           <button class="btn-modal-submit" type="submit">Send</button>
         </form>
       </div>
-    </div> -->
-
-    <script src="./js/modal.js"></script>
+    </div>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
