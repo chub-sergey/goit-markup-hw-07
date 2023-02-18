@@ -68,8 +68,8 @@ button {
 }
 .container {
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .header-container {
@@ -462,6 +462,7 @@ button {
   line-height: 1.5;
   padding-top: 8px;
   padding-bottom: 8px;
+  padding-right: 24px;
   padding-left: 24px;
   align-items: center;
   text-align: center;

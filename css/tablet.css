@@ -5,7 +5,7 @@
 
 @media (min-width: 768px) {
   .container {
-    max-width: 736px;
+    max-width: 768px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 16px;
@@ -28,6 +28,8 @@
   .header-navigation {
     display: flex;
     align-items: center;
+    /* padding-top: 24px;
+    padding-bottom: 22px; */
   }
   .current {
     position: relative;
@@ -60,13 +62,9 @@
   .header-link:focus {
     color: var(--pressed-state-color);
   }
-  .address {
-    margin-left: auto;
-  }
 
   .address-list {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     gap: 4px;
   }
@@ -186,7 +184,7 @@
   .footer-container {
     column-gap: 24px;
   }
-  .header-list {
-    margin-right: 80px;
+  .address-list {
+    flex-direction: column;
   }
 }
