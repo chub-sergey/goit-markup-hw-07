@@ -94,15 +94,26 @@
     flex-basis: calc((100%-48px) / 3);
   }
   .header {
-    padding-top: 24px;
-    padding-bottom: 28px;
+    /* padding-top: 24px;
+    padding-bottom: 28px; */
     border-bottom: 1px solid var(--light-third-color);
   }
   .header-logo {
     margin-right: 76px;
   }
-
   .address-list {
     gap: 40px;
+  }
+  .address-mail {
+    font-size: 16px;
+    line-height: var(--typical-lh);
+  }
+  .address-tel {
+    font-size: 16px;
+    line-height: var(--typical-lh);
+  }
+  .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
   }
 }

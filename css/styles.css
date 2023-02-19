@@ -62,8 +62,8 @@ button {
 
 /* =====================Header====================== */
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  /* padding-top: 24px;
+  padding-bottom: 24px; */
   border-bottom: 1px solid var(--light-third-color);
 }
 .container {
@@ -103,8 +103,8 @@ button {
   text-align: center;
   justify-content: center;
   margin: 0 auto;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 112px;
+  padding-bottom: 112px;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../images/background-hero-mob.jpg);
   max-width: 1440px;
@@ -216,12 +216,13 @@ button {
 .team-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   gap: 72px;
 }
 
 .team-item {
-  width: 100%;
+  max-width: 264px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
@@ -350,6 +351,7 @@ button {
 .footer-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
   text-align: center;

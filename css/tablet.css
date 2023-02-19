@@ -21,15 +21,13 @@
     padding-left: 15px;
     padding-right: 15px;
   }
-  .header {
+  /* .header {
     padding-top: 24px;
     padding-bottom: 22px;
-  }
+  } */
   .header-navigation {
     display: flex;
     align-items: center;
-    /* padding-top: 24px;
-    padding-bottom: 22px; */
   }
   .current {
     position: relative;
@@ -49,6 +47,8 @@
     display: flex;
     align-items: center;
     gap: 40px;
+    margin-bottom: 22px;
+    margin-top: 24px;
   }
   .header-link {
     font-weight: 500;
@@ -70,8 +70,8 @@
   }
   .address-mail {
     font-style: normal;
-    font-size: 16px;
-    line-height: var(--typical-lh);
+    font-size: 12px;
+    line-height: 1.33;
     letter-spacing: var(--typical-ls);
     color: var(--second-color);
     transition: color var(--main-transition);
@@ -82,8 +82,8 @@
   }
   .address-tel {
     font-style: normal;
-    font-size: 16px;
-    line-height: var(--typical-lh);
+    font-size: 12px;
+    line-height: 1.33;
     letter-spacing: var(--typical-ls);
     color: var(--second-color);
     transition: color var(--main-transition);
@@ -159,6 +159,10 @@
   .mobile-menu-open-btn {
     display: none;
   }
+  .hero {
+    padding-bottom: 108px;
+  }
+
   .hero-title {
     font-weight: 700;
     max-width: 500px;
