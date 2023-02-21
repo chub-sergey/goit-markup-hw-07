@@ -380,6 +380,7 @@ button {
   line-height: var(--typical-lh);
   letter-spacing: var(--typical-ls);
   color: var(--light-third-color);
+  text-align: start;
 }
 /* ========================== Footer Social========================== */
 
@@ -492,7 +493,7 @@ button {
   height: 100%;
   top: 0;
   background-color: rgba(46, 47, 66, 0.4);
-  transition: opacity var(--main-transition), visibility var(--main-transition),
+  transition: opacity 250ms var(--main-transition), visibility 250ms var(--main-transition),
     transform var(--main-transition);
 }
 .is-hidden {
